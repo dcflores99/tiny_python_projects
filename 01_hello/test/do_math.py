@@ -24,15 +24,15 @@ def main():
     a = int(sys.argv[1])
     b = int(sys.argv[3])
     if sys.argv[2] == "+":
-        print(addition(a, b))
+        return addition(a, b)
     if sys.argv[2] == "-":
-        print(subtraction(a, b))
-    if sys.argv[2] == "*":
-        print(multiplication(a, b))
+        return subtraction(a, b)
+    if sys.argv[2] == "mult":
+        return multiplication(a, b)
     if sys.argv[2] == "/":
-        print(division(a, b))
+        return division(a, b)
 
 
 
 if __name__ == "__main__":
-    main()
+    print(main())
